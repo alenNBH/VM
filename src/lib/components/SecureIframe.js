@@ -22,7 +22,7 @@ export default function SecureIframe(allProps) {
   const [prevMessage, setPrevMessage] = useState(undefined);
   const ref = React.useRef();
   const sandbox = "allow-scripts allow-same-origin allow-forms allow-popups";
-
+  console.log('SANDOBX', sandbox);
   const returnIframeResizerProps = () => {
     const result = {
       ...usedProps,
