@@ -26,8 +26,9 @@ export default function SecureIframe(allProps) {
   const returnIframeResizerProps = () => {
     const result = {
       ...usedProps,
-      style: style ?? { width: "1px", minWidth: "100%" },
+      style: style ?? { width: "1px", minWidth: "100%", height: "100%" },
       checkOrigin: false,
+      scrolling: true,
     };
 
     const allIframeResizerProps =
