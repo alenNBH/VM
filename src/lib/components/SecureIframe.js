@@ -113,13 +113,12 @@ export default function SecureIframe(allProps) {
       <IframeResizer
         {...returnIframeResizerProps()}
         forwardRef={ref}
-        sandbox={sandbox}
         onLoad={onLoadHandler}
       />
     );
   }
 
   return (
-    <iframe {...usedProps} ref={ref} sandbox={sandbox} onLoad={onLoadHandler} />
+    <iframe {...usedProps} ref={ref} onLoad={onLoadHandler} />
   );
 }
